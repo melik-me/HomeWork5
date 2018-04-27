@@ -43,7 +43,7 @@ class TestYear(unittest.TestCase):
         self.assertTrue(is_year_leap(-4000))
 
 # Testing does_it_exist
-
+class TestTriangle(unittest.TestCase):
     def test_ab_c(self):
         self.assertTrue(does_it_exist(3, 4, 5))
 
@@ -75,7 +75,7 @@ class TestYear(unittest.TestCase):
         self.assertFalse((does_it_exist(3, 3, 7)))
 
 # Testing who_are_you_dude
-
+class TestAnotherTriangle(unittest.TestCase):
     def test_equilateral(self):
         self.assertEqual(who_are_you_dude(9, 9, 9), "Equilateral triangle")
 
