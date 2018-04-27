@@ -19,8 +19,8 @@ class Person:
         id = self.full_name.split()
         return id[1]
 
-    def how_old(self, age=2018):
-        return age - self.year_of_birth
+    def age(self, years=2018):
+        return years - self.year_of_birth
 
 
 class Employee(Person):
@@ -53,7 +53,7 @@ class ITEmployee(Employee):
 
 if __name__ == "__main__":
     p = Person("John", 1936)
-    print("His name is {} {}, he will be {} years old in the year 2020.".format(p.name(), p.surname(), p.how_old(2020)))
+    print("His name is {} {}, he will be {} years old in the year 2020.".format(p.name(), p.surname(), p.age(2020)))
 
     e = Employee("\nJudy Doe", 1936, "old stager", 100500, 100500)
     print("{} is a {}!".format(e.full_name, e.rank()))
